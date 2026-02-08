@@ -1,434 +1,538 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>擎添工業有限公司 Ching-Tech | 專業工業自動化解決方案</title>
-  <meta name="description" content="擎添工業自1984年創立，專精機械自動控制、AGV/AMR無人搬運、機械手臂整合與工業4.0智慧工廠解決方案。">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>擎添工業有限公司 Ching-Tech | 專業工業自動化解決方案</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- ========== Navbar ========== -->
-  <nav class="navbar" role="navigation" aria-label="主導覽列">
-    <div class="container-x navbar-inner">
-      <a class="navbar-brand" href="#top">
-        <img src="images/CTLogo.svg" alt="CT Logo">
-        <span>擎添工業</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">關於我們</a></li>
-        <li><a href="#services">核心業務</a></li>
-        <li><a href="#tech">技術實力</a></li>
-        <li><a href="#process">服務流程</a></li>
-        <li><a href="#cases">成功案例</a></li>
-        <li><a href="#contact">聯絡資訊</a></li>
-        <li><a href="#contact" class="btn-cta-nav">立即諮詢</a></li>
-      </ul>
-      <button class="hamburger" aria-label="開啟選單">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile Nav -->
-  <div class="mobile-nav">
-    <a href="#about">關於我們</a>
-    <a href="#services">核心業務</a>
-    <a href="#tech">技術實力</a>
-    <a href="#process">服務流程</a>
-    <a href="#cases">成功案例</a>
-    <a href="#contact">聯絡資訊</a>
-    <a href="#contact" class="btn-cta-nav" style="margin-top:1rem;">立即諮詢</a>
-  </div>
-
-  <!-- ========== Hero ========== -->
-  <section id="top" class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-content">
-      <div class="hero-badge reveal">
-        <i data-lucide="zap" style="width:14px;height:14px;"></i>
-        自 1984 年創立 · 深耕自動化領域逾 40 年
-      </div>
-      <h1 class="reveal">打造工業 4.0<br><span class="accent">智慧工廠</span> 的堅實夥伴</h1>
-      <p class="hero-desc reveal">
-        專精於機械自動控制系統、AGV/AMR無人搬運與系統整合。<br>
-        為您提供量身訂製的自動化解決方案，全面提升生產效能。
-      </p>
-      <div class="hero-btns reveal">
-        <a href="#services" class="btn-primary">
-          探索解決方案
-          <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
-        </a>
-        <a href="#contact" class="btn-outline">聯繫我們</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== About ========== -->
-  <section id="about" class="about">
-    <div class="container-x about-grid">
-      <div class="reveal-left">
-        <p class="section-label">ABOUT US</p>
-        <h2 class="section-title">關於擎添工業<br><span style="font-size:0.45em;color:var(--text-muted);font-weight:400;">CHING-TECH INDUSTRIAL</span></h2>
-        <div class="about-text">
-          <p>擎添工業有限公司創立於1984年，為台灣專業的工業自動化解決方案供應商。我們專精於為機械製造商及各類產業提供客製化的自動控制系統與電氣生產服務。</p>
-          <p>在電腦監控系統與自動控制技術領域擁有卓越的專業能力，致力於協助客戶建構符合工業4.0標準的智慧工廠，實現企業的智慧製造轉型目標。</p>
-        </div>
-        <div class="stats-row">
-          <div class="stat-item">
-            <div class="stat-number" data-counter data-target="40" data-suffix="+">0</div>
-            <div class="stat-label">年產業經驗</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-counter data-target="1984">0</div>
-            <div class="stat-label">創立年份</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-counter data-target="8">0</div>
-            <div class="stat-label">大核心領域</div>
-          </div>
-        </div>
-      </div>
-      <div class="about-img reveal-right">
-        <img src="images/automation.webp" alt="擎添工業自動化設備" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Services ========== -->
-  <section id="services" class="services">
-    <div class="services-bg-img"></div>
-    <div class="container-x services-inner">
-      <div class="text-center mb-6 reveal">
-        <p class="section-label">OUR EXPERTISE</p>
-        <h2 class="section-title">核心業務領域</h2>
-        <p class="section-desc mx-auto">提供從單機控制到整廠智慧化的一站式解決方案</p>
-      </div>
-      <div class="services-grid stagger">
-        <div class="service-card reveal" style="--i:0">
-          <div class="icon-wrap"><i data-lucide="cpu" style="width:24px;height:24px;"></i></div>
-          <h3>機械自動控制系統</h3>
-          <p>精密控制技術整合，為各類機械設備提供穩定的控制核心。</p>
-        </div>
-        <div class="service-card reveal" style="--i:1">
-          <div class="icon-wrap"><i data-lucide="zap" style="width:24px;height:24px;"></i></div>
-          <h3>自動電氣生產客製化</h3>
-          <p>量身訂製電氣解決方案，滿足特殊製程需求。</p>
-        </div>
-        <div class="service-card reveal" style="--i:2">
-          <div class="icon-wrap"><i data-lucide="monitor" style="width:24px;height:24px;"></i></div>
-          <h3>電腦監控系統</h3>
-          <p>即時監控與數據管理，實現生產透明化。</p>
-        </div>
-        <div class="service-card reveal" style="--i:3">
-          <div class="icon-wrap"><i data-lucide="bot" style="width:24px;height:24px;"></i></div>
-          <h3>機械手臂整合</h3>
-          <p>機器人自動化應用，提升生產彈性與效率。</p>
-        </div>
-        <div class="service-card reveal" style="--i:4">
-          <div class="icon-wrap"><i data-lucide="truck" style="width:24px;height:24px;"></i></div>
-          <h3>無人搬運系統</h3>
-          <p>AGV/AMR智慧物流，串聯廠內物料流動。</p>
-        </div>
-        <div class="service-card reveal" style="--i:5">
-          <div class="icon-wrap"><i data-lucide="bar-chart-3" style="width:24px;height:24px;"></i></div>
-          <h3>電腦數據分析</h3>
-          <p>大數據應用與優化，提供決策輔助。</p>
-        </div>
-        <div class="service-card reveal" style="--i:6">
-          <div class="icon-wrap"><i data-lucide="factory" style="width:24px;height:24px;"></i></div>
-          <h3>工業4.0智慧工廠</h3>
-          <p>全方位數位轉型，建置現代化智慧生產環境。</p>
-        </div>
-        <div class="service-card reveal" style="--i:7">
-          <div class="icon-wrap"><i data-lucide="link" style="width:24px;height:24px;"></i></div>
-          <h3>系統整合服務</h3>
-          <p>跨平台、跨品牌整合能力，確保無縫協同運作。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== AGV/AMR ========== -->
-  <section class="feature-section">
-    <div class="container-x feature-grid">
-      <div class="feature-img reveal-left">
-        <img src="images/agv.webp" alt="AGV 自動導引車系統" loading="lazy">
-      </div>
-      <div class="feature-text reveal-right">
-        <p class="section-label">SMART LOGISTICS</p>
-        <h2 class="section-title">AGV/AMR 智慧物流搬運系統</h2>
-        <p>提供從標準型到超重載型（最高2000公斤）的自動導引車解決方案。結合高精度定位與智能調度，實現工廠物流全面自動化。</p>
-        <div class="feature-list">
-          <div class="feature-list-item">
-            <i data-lucide="check-circle-2" class="check-icon"></i>
-            <p><strong>全向式移動 (AMR)</strong>：360度靈活移動，無需轉向，適應狹窄空間。</p>
-          </div>
-          <div class="feature-list-item">
-            <i data-lucide="check-circle-2" class="check-icon"></i>
-            <p><strong>智能路徑規劃</strong>：自主避障與路徑優化，效率最大化。</p>
-          </div>
-          <div class="feature-list-item">
-            <i data-lucide="check-circle-2" class="check-icon"></i>
-            <p><strong>重載能力</strong>：專為金屬加工與大型設備設計的重載方案。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Robot Arm ========== -->
-  <section class="feature-section" style="background:var(--bg-primary);">
-    <div class="container-x feature-grid reverse">
-      <div class="feature-img reveal-right">
-        <img src="images/robot-arm.webp" alt="六軸智能機械手臂" loading="lazy">
-      </div>
-      <div class="feature-text reveal-left">
-        <p class="section-label">ROBOTIC INTEGRATION</p>
-        <h2 class="section-title">機械手臂整合應用</h2>
-        <p>整合多品牌機械手臂（如 KUKA, FANUC, YASKAWA 等），打造高效能自動化工作站。從精密組裝到重型搬運，我們提供最適合的解決方案。</p>
-        <div class="feature-list">
-          <div class="feature-list-item">
-            <i data-lucide="check-circle-2" class="check-icon"></i>
-            <p><strong>多元應用</strong>：焊接、搬運、組裝、塗膠等製程自動化。</p>
-          </div>
-          <div class="feature-list-item">
-            <i data-lucide="check-circle-2" class="check-icon"></i>
-            <p><strong>人機協作</strong>：導入協作型機器人，安全提升生產彈性。</p>
-          </div>
-          <div class="feature-list-item">
-            <i data-lucide="check-circle-2" class="check-icon"></i>
-            <p><strong>客製化程式開發</strong>：針對特殊製程需求進行邏輯開發與優化。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Process ========== -->
-  <section id="process" class="process">
-    <div class="process-bg"></div>
-    <div class="container-x process-inner">
-      <div class="text-center mb-6 reveal">
-        <p class="section-label">SERVICE PROCESS</p>
-        <h2 class="section-title">專業服務流程</h2>
-        <p class="section-desc mx-auto">嚴謹的標準化作業，確保專案如期如質達成目標</p>
-      </div>
-      <div class="process-z reveal">
-        <!-- Row 1: 1-2-3 -->
-        <div class="process-row">
-          <div class="process-step">
-            <div class="process-icon"><i data-lucide="search" style="width:24px;height:24px;"></i></div>
-            <div class="process-step-title">需求評估</div>
-            <div class="process-step-sub">現場勘查</div>
-          </div>
-          <div class="process-connector-h"></div>
-          <div class="process-step">
-            <div class="process-icon"><i data-lucide="compass" style="width:24px;height:24px;"></i></div>
-            <div class="process-step-title">方案設計</div>
-            <div class="process-step-sub">效益分析</div>
-          </div>
-          <div class="process-connector-h"></div>
-          <div class="process-step">
-            <div class="process-icon"><i data-lucide="settings" style="width:24px;height:24px;"></i></div>
-            <div class="process-step-title">系統建置</div>
-            <div class="process-step-sub">整合工程</div>
-          </div>
-        </div>
-        <!-- Vertical connector -->
-        <div class="process-connector-v"></div>
-        <!-- Row 2: 6-5-4 (reversed) -->
-        <div class="process-row reverse">
-          <div class="process-step">
-            <div class="process-icon"><i data-lucide="headphones" style="width:24px;height:24px;"></i></div>
-            <div class="process-step-title">售後服務</div>
-            <div class="process-step-sub">技術支援</div>
-          </div>
-          <div class="process-connector-h"></div>
-          <div class="process-step">
-            <div class="process-icon"><i data-lucide="graduation-cap" style="width:24px;height:24px;"></i></div>
-            <div class="process-step-title">教育訓練</div>
-            <div class="process-step-sub">操作轉移</div>
-          </div>
-          <div class="process-connector-h"></div>
-          <div class="process-step">
-            <div class="process-icon"><i data-lucide="check-circle" style="width:24px;height:24px;"></i></div>
-            <div class="process-step-title">測試驗收</div>
-            <div class="process-step-sub">效能調校</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Tech ========== -->
-  <section id="tech" class="tech">
-    <div class="container-x">
-      <div class="text-center mb-6 reveal">
-        <p class="section-label">TECHNOLOGY</p>
-        <h2 class="section-title">堅強技術實力</h2>
-        <p class="section-desc mx-auto">掌握自主研發關鍵技術，持續創新，從底層控制到上層管理系統，提供全方位的技術支援。</p>
-      </div>
-      <div class="tech-grid">
-        <div class="tech-card reveal" style="--i:0">
-          <div class="icon-wrap"><i data-lucide="cog" style="width:32px;height:32px;"></i></div>
-          <h3>PLC & 運動控制</h3>
-          <p>精通多品牌PLC與高階運動控制算法</p>
-        </div>
-        <div class="tech-card reveal" style="--i:1">
-          <div class="icon-wrap"><i data-lucide="tv" style="width:32px;height:32px;"></i></div>
-          <h3>SCADA & 數據可視化</h3>
-          <p>工廠監控管理系統與戰情室規劃</p>
-        </div>
-        <div class="tech-card reveal" style="--i:2">
-          <div class="icon-wrap"><i data-lucide="network" style="width:32px;height:32px;"></i></div>
-          <h3>IIoT & 工業 4.0</h3>
-          <p>設備聯網、數據採集與MES整合</p>
-        </div>
-      </div>
-      <div class="tech-tags reveal">
-        <span class="tech-tag">PLC程式設計</span>
-        <span class="tech-tag">運動控制</span>
-        <span class="tech-tag">SCADA系統</span>
-        <span class="tech-tag">大數據分析</span>
-        <span class="tech-tag">AGV/AMR技術</span>
-        <span class="tech-tag">機器人整合</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Cases ========== -->
-  <section id="cases" class="cases">
-    <div class="cases-bg"></div>
-    <div class="container-x cases-inner">
-      <div class="text-center mb-6 reveal">
-        <p class="section-label">CASE STUDIES</p>
-        <h2 class="section-title">成功案例實績</h2>
-        <p class="section-desc mx-auto">跨足多元產業，深獲國內外知名企業信賴</p>
-      </div>
-      <div class="cases-grid stagger">
-        <div class="case-card reveal" style="--i:0">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case1-1.png" alt="半導體封測大廠" loading="lazy"></div>
-          <h3>半導體封測大廠</h3>
-          <p>產線自動化與無人搬運系統</p>
-        </div>
-        <div class="case-card reveal" style="--i:1">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case10-1.jpg" alt="傳統金屬加工產業" loading="lazy"></div>
-          <h3>傳統金屬加工產業</h3>
-          <p>重載型AGV (2000KG)</p>
-        </div>
-        <div class="case-card reveal" style="--i:2">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case11-1.jpg" alt="美商科技產業" loading="lazy"></div>
-          <h3>美商科技產業</h3>
-          <p>重載AGV (600KG) ASRS系統</p>
-        </div>
-        <div class="case-card reveal" style="--i:3">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case8-1.jpg" alt="日商機械手臂產業" loading="lazy"></div>
-          <h3>日商機械手臂產業</h3>
-          <p>台灣安川智慧產線</p>
-        </div>
-        <div class="case-card reveal" style="--i:4">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case7-1.jpg" alt="台灣CNC加工產業" loading="lazy"></div>
-          <h3>台灣CNC加工產業</h3>
-          <p>精密加工自動化</p>
-        </div>
-        <div class="case-card reveal" style="--i:5">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case6-2.jpg" alt="日本光學科技廠" loading="lazy"></div>
-          <h3>日本光學科技廠</h3>
-          <p>烤箱料架AGV倉儲系統</p>
-        </div>
-        <div class="case-card reveal" style="--i:6">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case4-1.jpg" alt="面板廠" loading="lazy"></div>
-          <h3>面板廠</h3>
-          <p>自動化物料搬運</p>
-        </div>
-        <div class="case-card reveal" style="--i:7">
-          <div class="case-img-wrap"><img src="https://ching-tech.com/userfiles/images/CASE/case3-1.jpg" alt="PCB板廠" loading="lazy"></div>
-          <h3>PCB板廠</h3>
-          <p>重型烤箱自動化</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Contact ========== -->
-  <section id="contact" class="contact">
-    <div class="container-x contact-grid">
-      <div class="reveal-left">
-        <p class="section-label">CONTACT US</p>
-        <h2 class="section-title">聯絡我們</h2>
-        <div class="contact-text">
-          <p>有任何自動化需求或專案諮詢？歡迎隨時聯繫我們，擎添專業團隊將竭誠為您服務。</p>
-        </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="ci-icon"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div>
-            <div>
-              <h4>公司地址</h4>
-              <p>新北市五股區成泰路一段194-8號 J棟 (郵遞區號:248)</p>
+    <!-- 導航欄 -->
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item brand-text" href="#top">
+                    <img src="images/CTLogo.svg" alt="CT Logo" style="height: 32px; margin-right: 10px;">
+                    <strong>擎添工業</strong>&nbsp;Ching-Tech
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon"><i data-lucide="phone" style="width:20px;height:20px;"></i></div>
-            <div>
-              <h4>服務專線</h4>
-              <p>(02) 2903-2788</p>
+            <div id="mainNavbar" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">關於我們</a>
+                    <a class="navbar-item" href="#services">核心業務</a>
+                    <a class="navbar-item" href="#tech">技術實力</a>
+                    <a class="navbar-item" href="#process">服務流程</a>
+                    <a class="navbar-item" href="#cases">成功案例</a>
+                    <a class="navbar-item" href="#contact">聯絡資訊</a>
+                    <div class="navbar-item">
+                        <a class="button is-info" href="#contact">立即諮詢</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon"><i data-lucide="printer" style="width:20px;height:20px;"></i></div>
-            <div>
-              <h4>傳真號碼</h4>
-              <p>(02) 2903-9518</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon"><i data-lucide="globe" style="width:20px;height:20px;"></i></div>
-            <div>
-              <h4>官方網站</h4>
-              <p><a href="https://ching-tech.com/" target="_blank">https://ching-tech.com/</a></p>
-            </div>
-          </div>
         </div>
-        <a href="https://www.google.com/maps/search/?api=1&query=新北市五股區成泰路一段194-8號" target="_blank" class="btn-map">
-          <i data-lucide="map" style="width:16px;height:16px;"></i>
-          在 Google 地圖上查看
-        </a>
-      </div>
-      <div class="contact-map reveal-right">
-        <img src="images/contact-map.svg" alt="擎添工業位置地圖" loading="lazy">
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ========== Footer ========== -->
-  <footer class="footer-section">
-    <div class="container-x footer-inner">
-      <div class="footer-brand">
-        擎添工業 <span>您值得信賴的工業自動化夥伴</span>
-      </div>
-      <p class="footer-copy">© <span id="yr"></span> Ching-Tech Industrial Co., Ltd. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Hero Section -->
+    <section id="top" class="hero is-fullheight hero-section">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+                <p class="subtitle is-6 has-text-info mb-2">自 1984 年創立 · 深耕自動化領域逾 40 年</p>
+                <h1 class="title is-1">
+                    打造工業 4.0<br>
+                    <span class="has-text-info">智慧工廠</span> 的堅實夥伴
+                </h1>
+                <p class="subtitle is-5 mt-4">
+                    專精於機械自動控制系統、AGV/AMR無人搬運與系統整合。<br>
+                    為您提供量身訂製的自動化解決方案，全面提升生產效能。
+                </p>
+                <div class="buttons is-centered mt-5">
+                    <a href="#services" class="button is-info is-medium">
+                        探索解決方案 <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#contact" class="button is-outlined is-light is-medium">聯繫我們</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
+    <!-- 關於我們 -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <p class="subtitle is-6 has-text-info">ABOUT US</p>
+                    <h2 class="title is-2">關於擎添工業<br><span class="has-text-grey-light is-size-5">CHING-TECH INDUSTRIAL</span></h2>
+                    <p class="content is-size-5">
+                        擎添工業有限公司創立於1984年，為台灣專業的工業自動化解決方案供應商。我們專精於為機械製造商及各類產業提供客製化的自動控制系統與電氣生產服務。
+                    </p>
+                    <p class="content">
+                        在電腦監控系統與自動控制技術領域擁有卓越的專業能力，致力於協助客戶建構符合工業4.0標準的智慧工廠，實現企業的智慧製造轉型目標。
+                    </p>
+                    <div class="columns is-mobile mt-5">
+                        <div class="column has-text-centered">
+                            <p class="title is-1 has-text-info">40+</p>
+                            <p class="subtitle is-6">年產業經驗</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p class="title is-1 has-text-info">1984</p>
+                            <p class="subtitle is-6">創立年份</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p class="title is-1 has-text-info">8</p>
+                            <p class="subtitle is-6">大核心領域</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <figure class="image">
+                        <img src="images/automation.webp" alt="關於擎添工業" class="rounded-image">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心業務 -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <p class="subtitle is-6 has-text-info">OUR EXPERTISE</p>
+                <h2 class="title is-2">核心業務領域</h2>
+                <p class="subtitle is-5 has-text-grey-light">提供從單機控制到整廠智慧化的一站式解決方案</p>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-microchip fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">機械自動控制系統</h3>
+                        <p>精密控制技術整合，為各類機械設備提供穩定的控制核心。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-bolt fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">自動電氣生產客製化</h3>
+                        <p>量身訂製電氣解決方案，滿足特殊製程需求。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-desktop fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">電腦監控系統</h3>
+                        <p>即時監控與數據管理，實現生產透明化。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-robot fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">機械手臂整合</h3>
+                        <p>機器人自動化應用，提升生產彈性與效率。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-truck fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">無人搬運系統</h3>
+                        <p>AGV/AMR智慧物流，串聯廠內物料流動。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-chart-line fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">電腦數據分析</h3>
+                        <p>大數據應用與優化，提供決策輔助。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-industry fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">工業4.0智慧工廠</h3>
+                        <p>全方位數位轉型，建置現代化智慧生產環境。</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="service-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-link fa-2x"></i></span>
+                        <h3 class="title is-5 mt-3">系統整合服務</h3>
+                        <p>跨平台、跨品牌整合能力，確保無縫協同運作。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGV/AMR -->
+    <section class="section agv-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image">
+                        <img src="images/agv.webp" alt="AGV 自動導引車系統" class="rounded-image">
+                    </figure>
+                </div>
+                <div class="column is-6">
+                    <p class="subtitle is-6 has-text-info">SMART LOGISTICS</p>
+                    <h2 class="title is-2">AGV/AMR 智慧物流搬運系統</h2>
+                    <p class="content is-size-5">
+                        提供從標準型到超重載型（最高2000公斤）的自動導引車解決方案。結合高精度定位與智能調度，實現工廠物流全面自動化。
+                    </p>
+                    <div class="content">
+                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>全向式移動 (AMR)</strong>：360度靈活移動，無需轉向，適應狹窄空間。</p>
+                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>智能路徑規劃</strong>：自主避障與路徑優化，效率最大化。</p>
+                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>重載能力</strong>：專為金屬加工與大型設備設計的重載方案。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 機械手臂 -->
+    <section class="section robot-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <p class="subtitle is-6 has-text-info">ROBOTIC INTEGRATION</p>
+                    <h2 class="title is-2">機械手臂整合應用</h2>
+                    <p class="content is-size-5">
+                        整合多品牌機械手臂（如 KUKA, FANUC, YASKAWA 等），打造高效能自動化工作站。從精密組裝到重型搬運，我們提供最適合的解決方案。
+                    </p>
+                    <div class="content">
+                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>多元應用</strong>：焊接、搬運、組裝、塗膠等製程自動化。</p>
+                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>人機協作</strong>：導入協作型機器人，安全提升生產彈性。</p>
+                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>客製化程式開發</strong>：針對特殊製程需求進行邏輯開發與優化。</p>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <figure class="image">
+                        <img src="images/robot-arm.webp" alt="六軸智能機械手臂" class="rounded-image">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務流程 -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <p class="subtitle is-6 has-text-info">SERVICE PROCESS</p>
+                <h2 class="title is-2 has-text-white">專業服務流程</h2>
+                <p class="subtitle is-5 has-text-grey-light">嚴謹的標準化作業，確保專案如期如質達成目標</p>
+            </div>
+
+            <!-- Z 字形排版 -->
+            <div class="process-grid">
+                <!-- 上排：1-2-3 -->
+                <div class="process-row">
+                    <div class="process-step">
+                        <div class="process-icon-glow">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="process-text">
+                            <p class="process-title">需求評估</p>
+                            <p class="process-subtitle">現場勘查</p>
+                        </div>
+                    </div>
+                    <div class="process-connector horizontal"></div>
+                    <div class="process-step">
+                        <div class="process-icon-glow">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div class="process-text">
+                            <p class="process-title">方案設計</p>
+                            <p class="process-subtitle">效益分析</p>
+                        </div>
+                    </div>
+                    <div class="process-connector horizontal"></div>
+                    <div class="process-step">
+                        <div class="process-icon-glow">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="process-text">
+                            <p class="process-title">系統建置</p>
+                            <p class="process-subtitle">整合工程</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 垂直連接線 -->
+                <div class="process-connector vertical"></div>
+
+                <!-- 下排：6-5-4（反向顯示為 4-5-6） -->
+                <div class="process-row reverse">
+                    <div class="process-step">
+                        <div class="process-icon-glow">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="process-text">
+                            <p class="process-title">售後服務</p>
+                            <p class="process-subtitle">技術支援</p>
+                        </div>
+                    </div>
+                    <div class="process-connector horizontal"></div>
+                    <div class="process-step">
+                        <div class="process-icon-glow">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="process-text">
+                            <p class="process-title">教育訓練</p>
+                            <p class="process-subtitle">操作轉移</p>
+                        </div>
+                    </div>
+                    <div class="process-connector horizontal"></div>
+                    <div class="process-step">
+                        <div class="process-icon-glow">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="process-text">
+                            <p class="process-title">測試驗收</p>
+                            <p class="process-subtitle">效能調校</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技術實力 -->
+    <section id="tech" class="section tech-section">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <p class="subtitle is-6 has-text-info">TECHNOLOGY</p>
+                <h2 class="title is-2">堅強技術實力</h2>
+                <p class="subtitle is-5 has-text-grey-light">掌握自主研發關鍵技術，持續創新，從底層控制到上層管理系統，提供全方位的技術支援。</p>
+            </div>
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="tech-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-cogs fa-3x"></i></span>
+                        <h3 class="title is-4 mt-4">PLC & 運動控制</h3>
+                        <p>精通多品牌PLC與高階運動控制算法</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="tech-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-tv fa-3x"></i></span>
+                        <h3 class="title is-4 mt-4">SCADA & 數據可視化</h3>
+                        <p>工廠監控管理系統與戰情室規劃</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="tech-card">
+                        <span class="icon is-large has-text-info"><i class="fas fa-network-wired fa-3x"></i></span>
+                        <h3 class="title is-4 mt-4">IIoT & 工業 4.0</h3>
+                        <p>設備聯網、數據採集與MES整合</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-tags has-text-centered mt-5">
+                <span class="tag is-info is-medium m-1">PLC程式設計</span>
+                <span class="tag is-info is-medium m-1">運動控制</span>
+                <span class="tag is-info is-medium m-1">SCADA系統</span>
+                <span class="tag is-info is-medium m-1">大數據分析</span>
+                <span class="tag is-info is-medium m-1">AGV/AMR技術</span>
+                <span class="tag is-info is-medium m-1">機器人整合</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例 -->
+    <section id="cases" class="section cases-section">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <p class="subtitle is-6 has-text-info">CASE STUDIES</p>
+                <h2 class="title is-2">成功案例實績</h2>
+                <p class="subtitle is-5 has-text-grey-light">跨足多元產業，深獲國內外知名企業信賴</p>
+            </div>
+            <!-- 第一排 -->
+            <div class="columns is-centered mb-5">
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case1-1.png" alt="半導體封測大廠">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">半導體封測大廠</h3>
+                        <p class="case-desc">產線自動化與無人搬運系統</p>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case10-1.jpg" alt="傳統金屬加工產業">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">傳統金屬加工產業</h3>
+                        <p class="case-desc">重載型AGV (2000KG)</p>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case11-1.jpg" alt="美商科技產業">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">美商科技產業</h3>
+                        <p class="case-desc">重載AGV (600KG) ASRS系統</p>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case8-1.jpg" alt="日商機械手臂產業">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">日商機械手臂產業</h3>
+                        <p class="case-desc">台灣安川智慧產線</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二排 -->
+            <div class="columns is-centered">
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case7-1.jpg" alt="台灣CNC加工產業">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">台灣CNC加工產業</h3>
+                        <p class="case-desc">精密加工自動化</p>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case6-2.jpg" alt="日本光學科技廠">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">日本光學科技廠</h3>
+                        <p class="case-desc">烤箱料架AGV倉儲系統</p>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case4-1.jpg" alt="面板廠">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">面板廠</h3>
+                        <p class="case-desc">自動化物料搬運</p>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="case-item">
+                        <figure class="case-image-circle">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case3-1.jpg" alt="PCB板廠">
+                        </figure>
+                        <h3 class="title is-5 has-text-white mt-3">PCB板廠</h3>
+                        <p class="case-desc">重型烤箱自動化</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <p class="subtitle is-6 has-text-info">CONTACT US</p>
+                    <h2 class="title is-2">聯絡我們</h2>
+                    <p class="content is-size-5 mb-5">
+                        有任何自動化需求或專案諮詢？歡迎隨時聯繫我們，擎添專業團隊將竭誠為您服務。
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon has-text-info"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                            <div>
+                                <h4 class="title is-6 mb-1">公司地址</h4>
+                                <p>新北市五股區成泰路一段194-8號 J棟 (郵遞區號:248)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon has-text-info"><i class="fas fa-phone fa-lg"></i></span>
+                            <div>
+                                <h4 class="title is-6 mb-1">服務專線</h4>
+                                <p>(02) 2903-2788</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon has-text-info"><i class="fas fa-fax fa-lg"></i></span>
+                            <div>
+                                <h4 class="title is-6 mb-1">傳真號碼</h4>
+                                <p>(02) 2903-9518</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon has-text-info"><i class="fas fa-globe fa-lg"></i></span>
+                            <div>
+                                <h4 class="title is-6 mb-1">官方網站</h4>
+                                <p><a href="https://ching-tech.com/" target="_blank">https://ching-tech.com/</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=新北市五股區成泰路一段194-8號" target="_blank" class="button is-info is-outlined mt-4">
+                        <i class="fas fa-map mr-2"></i> 在 Google 地圖上查看
+                    </a>
+                </div>
+                <div class="column is-6">
+                    <div class="contact-map-svg">
+                        <img src="images/contact-map.svg" alt="擎添工業位置地圖">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <p class="title is-5 has-text-white">擎添工業</p>
+                    <p class="subtitle is-6 has-text-grey-light">您值得信賴的工業自動化夥伴</p>
+                </div>
+                <div class="column is-6 has-text-right">
+                    <p class="has-text-grey-light">© <span id="copyright-year"></span> Ching-Tech Industrial Co., Ltd. All rights reserved.</p>
+                    <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回 AGVCUI -->
+
+    <script>
+        // 漢堡選單切換
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+
+            // 平滑滾動
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
