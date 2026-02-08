@@ -3,12 +3,41 @@
 /* 基本設定 */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: #1a1a1a;
     color: #e0e0e0;
+}
+
+/* Skip to content link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 9999;
+    background: #3e90f0;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 0 8px 8px;
+    font-weight: 600;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: #fff;
+}
+
+/* Focus visible for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+.button:focus-visible,
+[role="button"]:focus-visible {
+    outline: 2px solid #5da9f9;
+    outline-offset: 2px;
 }
 
 /* 導航欄 */
@@ -20,6 +49,12 @@ body {
 .brand-text {
     font-size: 1.2rem;
     letter-spacing: 0.5px;
+}
+
+/* Navbar active section highlight */
+.navbar-item.is-active-nav {
+    color: #5da9f9 !important;
+    border-bottom: 2px solid #3e90f0;
 }
 
 /* Hero Section */
@@ -55,7 +90,7 @@ body {
     animation: tech-glow 3s ease-in-out infinite;
 }
 
-/* 脈動光暈動畫 - 加強版 */
+/* 脈動光暈動畫 */
 @keyframes tech-glow {
     0%, 100% {
         box-shadow:
@@ -71,7 +106,7 @@ body {
     }
 }
 
-/* Hero 文字樣式 - 依字色外光暈 */
+/* Hero 文字樣式 */
 .hero-section .container .title.is-1 {
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2);
@@ -98,7 +133,7 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
-/* Hero 科技感按鈕 - 強化版 */
+/* Hero 科技感按鈕 */
 .hero-section .button.is-info {
     background: linear-gradient(135deg, rgba(62, 144, 240, 0.5), rgba(93, 169, 249, 0.4));
     border-color: #5da9f9;
@@ -144,7 +179,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* 左上角 */
 .hero-section .corner-tl {
     top: -2px;
     left: -2px;
@@ -152,7 +186,6 @@ body {
     border-left: 3px solid #3e90f0;
 }
 
-/* 右上角 */
 .hero-section .corner-tr {
     top: -2px;
     right: -2px;
@@ -160,7 +193,6 @@ body {
     border-right: 3px solid #3e90f0;
 }
 
-/* 左下角 */
 .hero-section .corner-bl {
     bottom: -2px;
     left: -2px;
@@ -168,7 +200,6 @@ body {
     border-left: 3px solid #3e90f0;
 }
 
-/* 右下角 */
 .hero-section .corner-br {
     bottom: -2px;
     right: -2px;
@@ -312,7 +343,7 @@ body {
 }
 
 .service-card p {
-    color: #b0b0b0;
+    color: #c0c0c0;
     font-size: 0.95rem;
 }
 
@@ -413,8 +444,163 @@ body {
     margin-right: 16.5%;
 }
 
-/* 手機版：垂直排列 */
+/* 技術卡片 */
+.tech-card {
+    background-color: #242424;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.tech-card:hover {
+    box-shadow: 0 10px 25px rgba(62, 144, 240, 0.15);
+}
+
+.tech-card h3 {
+    color: #fff;
+}
+
+.tech-card p {
+    color: #c0c0c0;
+}
+
+.tech-tags .tag {
+    background-color: rgba(62, 144, 240, 0.2);
+    color: #5da9f9;
+    border: 1px solid #3e90f0;
+}
+
+/* 案例卡片 - 圓形圖片樣式 */
+.case-item {
+    padding: 1rem;
+}
+
+.case-image-circle {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3e90f0;
+    box-shadow: 0 0 20px rgba(62, 144, 240, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-image-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(62, 144, 240, 0.6), 0 0 60px rgba(62, 144, 240, 0.3);
+}
+
+.case-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-desc {
+    color: #c0c0c0;
+    font-size: 0.9rem;
+}
+
+/* 聯絡資訊 */
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item .icon {
+    margin-top: 0.25rem;
+}
+
+.contact-item h4 {
+    color: #fff;
+}
+
+.contact-item p {
+    color: #c0c0c0;
+}
+
+.contact-item a {
+    color: #5da9f9;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d0d0d;
+    padding: 3rem 1.5rem;
+}
+
+/* 回到頂部按鈕 */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #3e90f0;
+    background: rgba(26, 26, 26, 0.9);
+    color: #5da9f9;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(62, 144, 240, 0.3);
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #3e90f0;
+    color: #fff;
+    box-shadow: 0 6px 25px rgba(62, 144, 240, 0.6);
+}
+
+/* 響應式調整 */
 @media screen and (max-width: 768px) {
+    /* Hero 手機版文字縮小 */
+    .hero-section .title.is-1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .subtitle.is-5 {
+        font-size: 1rem;
+    }
+
+    .hero-section .container {
+        padding: 2rem 1.5rem;
+    }
+
+    /* 手機版 background-attachment: scroll（效能） */
+    .hero-section,
+    .services-section,
+    .cases-section {
+        background-attachment: scroll;
+    }
+
+    /* 服務流程手機版垂直排列 */
     .process-row {
         flex-direction: column !important;
         gap: 0.5rem;
@@ -439,176 +625,16 @@ body {
     .process-icon-glow i {
         font-size: 1.5rem;
     }
-}
 
-/* 技術卡片 */
-.tech-card {
-    background-color: #242424;
-    border-radius: 12px;
-    padding: 2.5rem;
-    text-align: center;
-    height: 100%;
-    transition: transform 0.3s;
-}
+    /* 案例圖片圓形縮小 */
+    .case-image-circle {
+        width: 110px;
+        height: 110px;
+    }
 
-.tech-card:hover {
-    box-shadow: 0 10px 25px rgba(62, 144, 240, 0.15);
-}
-
-.tech-card h3 {
-    color: #fff;
-}
-
-.tech-card p {
-    color: #b0b0b0;
-}
-
-.tech-tags .tag {
-    background-color: rgba(62, 144, 240, 0.2);
-    color: #5da9f9;
-    border: 1px solid #3e90f0;
-}
-
-/* 案例卡片 */
-.case-card {
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    padding: 2rem;
-    height: 100%;
-    border-left: 4px solid #3e90f0;
-}
-
-.case-label {
-    color: #3e90f0;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
-.case-card h3 {
-    color: #fff;
-    margin-bottom: 1rem;
-}
-
-.case-card p {
-    color: #b0b0b0;
-}
-
-/* 新版案例 - 圓形圖片樣式 */
-.case-item {
-    padding: 1rem;
-}
-
-.case-image-circle {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #3e90f0;
-    box-shadow: 0 0 20px rgba(62, 144, 240, 0.3);
-}
-
-.case-image-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.case-desc {
-    color: #b0b0b0;
-    font-size: 0.9rem;
-}
-
-/* 新版服務流程 - 圓形圖片步驟 */
-.process-step {
-    text-align: center;
-    padding: 0.5rem;
-}
-
-.process-icon-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 0.5rem;
-    border: 2px solid #3e90f0;
-    box-shadow: 0 0 15px rgba(62, 144, 240, 0.3);
-}
-
-.process-icon-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.process-title {
-    color: #fff;
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-/* 聯絡資訊 */
-.contact-info {
-    margin-top: 2rem;
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.contact-item .icon {
-    margin-top: 0.25rem;
-}
-
-.contact-item h4 {
-    color: #fff;
-}
-
-.contact-item p {
-    color: #b0b0b0;
-}
-
-.contact-item a {
-    color: #5da9f9;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-.footer {
-    background-color: #0d0d0d;
-    padding: 3rem 1.5rem;
-}
-
-/* 返回 AGVCUI 按鈕 */
-.back-to-agvcui {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 1000;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(62, 144, 240, 0.4);
-}
-
-.back-to-agvcui:hover {
-    box-shadow: 0 6px 20px rgba(62, 144, 240, 0.6);
-}
-
-/* 響應式調整 */
-@media screen and (max-width: 768px) {
-    .hero-section .title.is-1 {
-        font-size: 2rem;
+    /* 地圖 SVG 滿寬 */
+    .contact-map-svg {
+        max-width: 100%;
     }
 
     .columns.is-mobile {
@@ -621,6 +647,11 @@ body {
 
     .process-step {
         margin-bottom: 1rem;
+    }
+
+    /* 服務卡片間距 */
+    .service-card {
+        margin-bottom: 0.5rem;
     }
 }
 

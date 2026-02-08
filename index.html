@@ -4,20 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>擎添工業有限公司 Ching-Tech | 專業工業自動化解決方案</title>
+    <meta name="description" content="擎添工業自1984年創立，專精機械自動控制系統、AGV/AMR無人搬運車、機械手臂整合及工業4.0智慧工廠解決方案。超過40年產業經驗，為您提供量身訂製的自動化方案。">
+    <meta name="keywords" content="擎添工業,工業自動化,AGV,AMR,無人搬運車,機械手臂,PLC,SCADA,工業4.0,智慧工廠,自動控制系統">
+    <link rel="canonical" href="https://yazelin.github.io/ching-tech-website/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="擎添工業有限公司 Ching-Tech | 專業工業自動化解決方案">
+    <meta property="og:description" content="自1984年創立，專精機械自動控制、AGV/AMR無人搬運與工業4.0智慧工廠解決方案。40年以上產業經驗。">
+    <meta property="og:image" content="https://yazelin.github.io/ching-tech-website/images/hero-bg.webp">
+    <meta property="og:url" content="https://yazelin.github.io/ching-tech-website/">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="擎添工業 Ching-Tech">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/CTLogo.svg">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://ching-tech.com">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/website.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font Awesome font-display override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-display: swap;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "擎添工業有限公司",
+        "alternateName": "Ching-Tech Industrial Co., Ltd.",
+        "url": "https://ching-tech.com/",
+        "logo": "https://yazelin.github.io/ching-tech-website/images/CTLogo.svg",
+        "foundingDate": "1984",
+        "description": "專精於機械自動控制系統、AGV/AMR無人搬運與系統整合的工業自動化解決方案供應商。",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "成泰路一段194-8號 J棟",
+            "addressLocality": "五股區",
+            "addressRegion": "新北市",
+            "postalCode": "248",
+            "addressCountry": "TW"
+        },
+        "telephone": "(02) 2903-2788",
+        "faxNumber": "(02) 2903-9518",
+        "sameAs": ["https://ching-tech.com/"]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">跳至主要內容</a>
+
     <!-- 導航欄 -->
-    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="主要導覽">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item brand-text" href="#top">
-                    <img src="images/CTLogo.svg" alt="CT Logo" style="height: 32px; margin-right: 10px;">
+                    <img src="images/CTLogo.svg" alt="擎添工業 Logo" style="height: 32px; margin-right: 10px;" width="32" height="32">
                     <strong>擎添工業</strong>&nbsp;Ching-Tech
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                <a role="button" class="navbar-burger" aria-label="展開選單" aria-expanded="false" data-target="mainNavbar">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -39,6 +100,7 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="top" class="hero is-fullheight hero-section">
         <div class="hero-body">
@@ -58,7 +120,7 @@
                 </p>
                 <div class="buttons is-centered mt-5">
                     <a href="#services" class="button is-info is-medium">
-                        探索解決方案 <i class="fas fa-arrow-right ml-2"></i>
+                        探索解決方案 <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
                     </a>
                     <a href="#contact" class="button is-outlined is-light is-medium">聯繫我們</a>
                 </div>
@@ -96,7 +158,7 @@
                 </div>
                 <div class="column is-6">
                     <figure class="image">
-                        <img src="images/automation.webp" alt="關於擎添工業" class="rounded-image">
+                        <img src="images/automation.webp" alt="擎添工業自動化生產設備與智慧控制系統" class="rounded-image" loading="lazy">
                     </figure>
                 </div>
             </div>
@@ -114,56 +176,56 @@
             <div class="columns is-multiline">
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-microchip fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-microchip fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">機械自動控制系統</h3>
                         <p>精密控制技術整合，為各類機械設備提供穩定的控制核心。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-bolt fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-bolt fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">自動電氣生產客製化</h3>
                         <p>量身訂製電氣解決方案，滿足特殊製程需求。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-desktop fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-desktop fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">電腦監控系統</h3>
                         <p>即時監控與數據管理，實現生產透明化。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-robot fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-robot fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">機械手臂整合</h3>
                         <p>機器人自動化應用，提升生產彈性與效率。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-truck fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-truck fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">無人搬運系統</h3>
                         <p>AGV/AMR智慧物流，串聯廠內物料流動。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-chart-line fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-chart-line fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">電腦數據分析</h3>
                         <p>大數據應用與優化，提供決策輔助。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-industry fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-industry fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">工業4.0智慧工廠</h3>
                         <p>全方位數位轉型，建置現代化智慧生產環境。</p>
                     </div>
                 </div>
                 <div class="column is-3">
                     <div class="service-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-link fa-2x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-link fa-2x" aria-hidden="true"></i></span>
                         <h3 class="title is-5 mt-3">系統整合服務</h3>
                         <p>跨平台、跨品牌整合能力，確保無縫協同運作。</p>
                     </div>
@@ -178,7 +240,7 @@
             <div class="columns is-vcentered">
                 <div class="column is-6">
                     <figure class="image">
-                        <img src="images/agv.webp" alt="AGV 自動導引車系統" class="rounded-image">
+                        <img src="images/agv.webp" alt="AGV自動導引車在工廠內執行物料搬運作業" class="rounded-image" loading="lazy">
                     </figure>
                 </div>
                 <div class="column is-6">
@@ -188,9 +250,9 @@
                         提供從標準型到超重載型（最高2000公斤）的自動導引車解決方案。結合高精度定位與智能調度，實現工廠物流全面自動化。
                     </p>
                     <div class="content">
-                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>全向式移動 (AMR)</strong>：360度靈活移動，無需轉向，適應狹窄空間。</p>
-                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>智能路徑規劃</strong>：自主避障與路徑優化，效率最大化。</p>
-                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>重載能力</strong>：專為金屬加工與大型設備設計的重載方案。</p>
+                        <p><i class="fas fa-check has-text-info mr-2" aria-hidden="true"></i><strong>全向式移動 (AMR)</strong>：360度靈活移動，無需轉向，適應狹窄空間。</p>
+                        <p><i class="fas fa-check has-text-info mr-2" aria-hidden="true"></i><strong>智能路徑規劃</strong>：自主避障與路徑優化，效率最大化。</p>
+                        <p><i class="fas fa-check has-text-info mr-2" aria-hidden="true"></i><strong>重載能力</strong>：專為金屬加工與大型設備設計的重載方案。</p>
                     </div>
                 </div>
             </div>
@@ -208,14 +270,14 @@
                         整合多品牌機械手臂（如 KUKA, FANUC, YASKAWA 等），打造高效能自動化工作站。從精密組裝到重型搬運，我們提供最適合的解決方案。
                     </p>
                     <div class="content">
-                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>多元應用</strong>：焊接、搬運、組裝、塗膠等製程自動化。</p>
-                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>人機協作</strong>：導入協作型機器人，安全提升生產彈性。</p>
-                        <p><i class="fas fa-check has-text-info mr-2"></i><strong>客製化程式開發</strong>：針對特殊製程需求進行邏輯開發與優化。</p>
+                        <p><i class="fas fa-check has-text-info mr-2" aria-hidden="true"></i><strong>多元應用</strong>：焊接、搬運、組裝、塗膠等製程自動化。</p>
+                        <p><i class="fas fa-check has-text-info mr-2" aria-hidden="true"></i><strong>人機協作</strong>：導入協作型機器人，安全提升生產彈性。</p>
+                        <p><i class="fas fa-check has-text-info mr-2" aria-hidden="true"></i><strong>客製化程式開發</strong>：針對特殊製程需求進行邏輯開發與優化。</p>
                     </div>
                 </div>
                 <div class="column is-6">
                     <figure class="image">
-                        <img src="images/robot-arm.webp" alt="六軸智能機械手臂" class="rounded-image">
+                        <img src="images/robot-arm.webp" alt="六軸智能機械手臂執行精密自動化作業" class="rounded-image" loading="lazy">
                     </figure>
                 </div>
             </div>
@@ -237,27 +299,27 @@
                 <div class="process-row">
                     <div class="process-step">
                         <div class="process-icon-glow">
-                            <i class="fas fa-search"></i>
+                            <i class="fas fa-search" aria-hidden="true"></i>
                         </div>
                         <div class="process-text">
                             <p class="process-title">需求評估</p>
                             <p class="process-subtitle">現場勘查</p>
                         </div>
                     </div>
-                    <div class="process-connector horizontal"></div>
+                    <div class="process-connector horizontal" aria-hidden="true"></div>
                     <div class="process-step">
                         <div class="process-icon-glow">
-                            <i class="fas fa-drafting-compass"></i>
+                            <i class="fas fa-drafting-compass" aria-hidden="true"></i>
                         </div>
                         <div class="process-text">
                             <p class="process-title">方案設計</p>
                             <p class="process-subtitle">效益分析</p>
                         </div>
                     </div>
-                    <div class="process-connector horizontal"></div>
+                    <div class="process-connector horizontal" aria-hidden="true"></div>
                     <div class="process-step">
                         <div class="process-icon-glow">
-                            <i class="fas fa-cog"></i>
+                            <i class="fas fa-cog" aria-hidden="true"></i>
                         </div>
                         <div class="process-text">
                             <p class="process-title">系統建置</p>
@@ -267,33 +329,33 @@
                 </div>
 
                 <!-- 垂直連接線 -->
-                <div class="process-connector vertical"></div>
+                <div class="process-connector vertical" aria-hidden="true"></div>
 
                 <!-- 下排：6-5-4（反向顯示為 4-5-6） -->
                 <div class="process-row reverse">
                     <div class="process-step">
                         <div class="process-icon-glow">
-                            <i class="fas fa-headset"></i>
+                            <i class="fas fa-headset" aria-hidden="true"></i>
                         </div>
                         <div class="process-text">
                             <p class="process-title">售後服務</p>
                             <p class="process-subtitle">技術支援</p>
                         </div>
                     </div>
-                    <div class="process-connector horizontal"></div>
+                    <div class="process-connector horizontal" aria-hidden="true"></div>
                     <div class="process-step">
                         <div class="process-icon-glow">
-                            <i class="fas fa-user-graduate"></i>
+                            <i class="fas fa-user-graduate" aria-hidden="true"></i>
                         </div>
                         <div class="process-text">
                             <p class="process-title">教育訓練</p>
                             <p class="process-subtitle">操作轉移</p>
                         </div>
                     </div>
-                    <div class="process-connector horizontal"></div>
+                    <div class="process-connector horizontal" aria-hidden="true"></div>
                     <div class="process-step">
                         <div class="process-icon-glow">
-                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
                         <div class="process-text">
                             <p class="process-title">測試驗收</p>
@@ -316,21 +378,21 @@
             <div class="columns">
                 <div class="column is-4">
                     <div class="tech-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-cogs fa-3x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-cogs fa-3x" aria-hidden="true"></i></span>
                         <h3 class="title is-4 mt-4">PLC & 運動控制</h3>
                         <p>精通多品牌PLC與高階運動控制算法</p>
                     </div>
                 </div>
                 <div class="column is-4">
                     <div class="tech-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-tv fa-3x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-tv fa-3x" aria-hidden="true"></i></span>
                         <h3 class="title is-4 mt-4">SCADA & 數據可視化</h3>
                         <p>工廠監控管理系統與戰情室規劃</p>
                     </div>
                 </div>
                 <div class="column is-4">
                     <div class="tech-card">
-                        <span class="icon is-large has-text-info"><i class="fas fa-network-wired fa-3x"></i></span>
+                        <span class="icon is-large has-text-info"><i class="fas fa-network-wired fa-3x" aria-hidden="true"></i></span>
                         <h3 class="title is-4 mt-4">IIoT & 工業 4.0</h3>
                         <p>設備聯網、數據採集與MES整合</p>
                     </div>
@@ -360,7 +422,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case1-1.png" alt="半導體封測大廠">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case1-1.png" alt="半導體封測大廠產線自動化與無人搬運系統案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">半導體封測大廠</h3>
                         <p class="case-desc">產線自動化與無人搬運系統</p>
@@ -369,7 +431,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case10-1.jpg" alt="傳統金屬加工產業">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case10-1.jpg" alt="傳統金屬加工產業重載型AGV 2000KG搬運案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">傳統金屬加工產業</h3>
                         <p class="case-desc">重載型AGV (2000KG)</p>
@@ -378,7 +440,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case11-1.jpg" alt="美商科技產業">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case11-1.jpg" alt="美商科技產業重載AGV與ASRS自動倉儲系統案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">美商科技產業</h3>
                         <p class="case-desc">重載AGV (600KG) ASRS系統</p>
@@ -387,7 +449,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case8-1.jpg" alt="日商機械手臂產業">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case8-1.jpg" alt="日商機械手臂產業台灣安川智慧產線案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">日商機械手臂產業</h3>
                         <p class="case-desc">台灣安川智慧產線</p>
@@ -399,7 +461,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case7-1.jpg" alt="台灣CNC加工產業">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case7-1.jpg" alt="台灣CNC加工產業精密加工自動化案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">台灣CNC加工產業</h3>
                         <p class="case-desc">精密加工自動化</p>
@@ -408,7 +470,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case6-2.jpg" alt="日本光學科技廠">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case6-2.jpg" alt="日本光學科技廠烤箱料架AGV倉儲系統案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">日本光學科技廠</h3>
                         <p class="case-desc">烤箱料架AGV倉儲系統</p>
@@ -417,7 +479,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case4-1.jpg" alt="面板廠">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case4-1.jpg" alt="面板廠自動化物料搬運系統案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">面板廠</h3>
                         <p class="case-desc">自動化物料搬運</p>
@@ -426,7 +488,7 @@
                 <div class="column is-3 has-text-centered">
                     <div class="case-item">
                         <figure class="case-image-circle">
-                            <img src="https://ching-tech.com/userfiles/images/CASE/case3-1.jpg" alt="PCB板廠">
+                            <img src="https://ching-tech.com/userfiles/images/CASE/case3-1.jpg" alt="PCB板廠重型烤箱自動化搬運案例" loading="lazy">
                         </figure>
                         <h3 class="title is-5 has-text-white mt-3">PCB板廠</h3>
                         <p class="case-desc">重型烤箱自動化</p>
@@ -448,46 +510,47 @@
                     </p>
                     <div class="contact-info">
                         <div class="contact-item">
-                            <span class="icon has-text-info"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                            <span class="icon has-text-info"><i class="fas fa-map-marker-alt fa-lg" aria-hidden="true"></i></span>
                             <div>
                                 <h4 class="title is-6 mb-1">公司地址</h4>
                                 <p>新北市五股區成泰路一段194-8號 J棟 (郵遞區號:248)</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="icon has-text-info"><i class="fas fa-phone fa-lg"></i></span>
+                            <span class="icon has-text-info"><i class="fas fa-phone fa-lg" aria-hidden="true"></i></span>
                             <div>
                                 <h4 class="title is-6 mb-1">服務專線</h4>
-                                <p>(02) 2903-2788</p>
+                                <p><a href="tel:+886229032788">(02) 2903-2788</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="icon has-text-info"><i class="fas fa-fax fa-lg"></i></span>
+                            <span class="icon has-text-info"><i class="fas fa-fax fa-lg" aria-hidden="true"></i></span>
                             <div>
                                 <h4 class="title is-6 mb-1">傳真號碼</h4>
                                 <p>(02) 2903-9518</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="icon has-text-info"><i class="fas fa-globe fa-lg"></i></span>
+                            <span class="icon has-text-info"><i class="fas fa-globe fa-lg" aria-hidden="true"></i></span>
                             <div>
                                 <h4 class="title is-6 mb-1">官方網站</h4>
-                                <p><a href="https://ching-tech.com/" target="_blank">https://ching-tech.com/</a></p>
+                                <p><a href="https://ching-tech.com/" target="_blank" rel="noopener noreferrer">https://ching-tech.com/</a></p>
                             </div>
                         </div>
                     </div>
-                    <a href="https://www.google.com/maps/search/?api=1&query=新北市五股區成泰路一段194-8號" target="_blank" class="button is-info is-outlined mt-4">
-                        <i class="fas fa-map mr-2"></i> 在 Google 地圖上查看
+                    <a href="https://www.google.com/maps/search/?api=1&query=新北市五股區成泰路一段194-8號" target="_blank" rel="noopener noreferrer" class="button is-info is-outlined mt-4">
+                        <i class="fas fa-map mr-2" aria-hidden="true"></i> 在 Google 地圖上查看
                     </a>
                 </div>
                 <div class="column is-6">
                     <div class="contact-map-svg">
-                        <img src="images/contact-map.svg" alt="擎添工業位置地圖">
+                        <img src="images/contact-map.svg" alt="擎添工業公司位於新北市五股區的位置地圖" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -505,33 +568,103 @@
         </div>
     </footer>
 
-    <!-- 返回 AGVCUI -->
+    <!-- 回到頂部按鈕 -->
+    <button id="back-to-top" class="back-to-top" aria-label="回到頁面頂部" title="回到頂部">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <noscript>
+        <div style="background:#3e90f0;color:#fff;text-align:center;padding:1rem;">
+            本網站部分功能需要 JavaScript 支援，請啟用瀏覽器的 JavaScript 以獲得最佳體驗。
+        </div>
+    </noscript>
 
     <script>
-        // 漢堡選單切換
         document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            if ($navbarBurgers.length > 0) {
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
+            // 漢堡選單切換
+            const $navbarBurgers = document.querySelectorAll('.navbar-burger');
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $target = document.getElementById(el.dataset.target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                    el.setAttribute('aria-expanded', el.classList.contains('is-active'));
                 });
-            }
+            });
 
-            // 平滑滾動
+            // 平滑滾動（考慮 fixed navbar offset）
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
                     if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+
+                        // 漢堡選單點連結後自動收合
+                        const burger = document.querySelector('.navbar-burger');
+                        const menu = document.getElementById('mainNavbar');
+                        if (burger && burger.classList.contains('is-active')) {
+                            burger.classList.remove('is-active');
+                            menu.classList.remove('is-active');
+                            burger.setAttribute('aria-expanded', 'false');
+                        }
                     }
                 });
             });
+
+            // Scroll Spy - 高亮當前 section
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-end .navbar-item[href^="#"]');
+
+            function updateActiveNav() {
+                const scrollPos = window.scrollY + navbarHeight + 100;
+                let currentSection = '';
+                sections.forEach(section => {
+                    if (section.offsetTop <= scrollPos) {
+                        currentSection = '#' + section.id;
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('is-active-nav');
+                    if (link.getAttribute('href') === currentSection) {
+                        link.classList.add('is-active-nav');
+                    }
+                });
+            }
+
+            // 回到頂部按鈕
+            const backToTop = document.getElementById('back-to-top');
+            function toggleBackToTop() {
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('is-visible');
+                } else {
+                    backToTop.classList.remove('is-visible');
+                }
+            }
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 節流滾動事件
+            let ticking = false;
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        updateActiveNav();
+                        toggleBackToTop();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            // 初始呼叫
+            updateActiveNav();
+            toggleBackToTop();
         });
     </script>
 </body>
